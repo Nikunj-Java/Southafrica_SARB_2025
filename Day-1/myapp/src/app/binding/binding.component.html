@@ -1,3 +1,22 @@
 <p>binding works!</p>
 
 <h3>getting  data using interpolation: {{name}}</h3>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th> <th>Price</th><th>Availability</th><th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of products">
+                <td>{{p.name}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.availability}}</td>
+                <td>{{p.rating}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

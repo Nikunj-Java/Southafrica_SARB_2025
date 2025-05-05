@@ -156,6 +156,47 @@ app.component.html
 
 
 
+example-2
+showing an array in html
+--------------------------------
+
+
+goto>binding.component.ts
+------------------------------
+products:any=[
+    {name:"pencile",price:"10",availability:"05-05-2025",rating:4.8},
+    {name:"eraser",price:"5",availability:"02-05-2025",rating:4.7},
+    {name:"scale",price:"8",availability:"10-05-2025",rating:5.0},
+    {name:"books",price:"20",availability:"23-05-2025",rating:4.6},
+    {name:"diary",price:"50",availability:"09-05-2025",rating:5.0},
+  
+  ]
+
+
+then goto> binding.component.html and add below table code
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th> <th>Price</th><th>Availability</th><th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of products">
+                <td>{{p.name}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.availability}}</td>
+                <td>{{p.rating}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
 
 
 
