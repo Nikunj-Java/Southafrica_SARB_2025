@@ -63,6 +63,94 @@ open terminal> choose cmd> tsc first.ts
 now run that file using node
 - node first.js 
 
+*********************************************************
+		ANGULAR INSTALLTION
+*********************************************************
+
+> npm i @angular/cli@16.1.0 or npm install @angular/cli@16.1.0
+> ng version
+
+Step:1 craete angular application
+------------------------------------
+> ng new myapp
+ it will ask you two question
+ 1. do you want to add angular routing? (y/N)  : y + enter
+ 2. choose css-css + enter
+once app is ready you need to move to that folder using cmd
+> cd myapp
+
+to run the angular application
+> ng serve
+
+**************************************************************
+1. Creating The components
+**************************************************************
+> goto> new terminal> cd myapp> ng generate component mycomponent
+		or ng g c mycomponent
+
+it will generate 4 files
+	1. component.css
+	2. component.html
+	3. component.sepc.ts
+	4. component.ts
+now to to > component.ts file> copy the selector tag like "app-mycomponent"
+
+goto> app.component.html> at the end use it like
+
+<app-mycomponent></app-mycomponent>
+
+save it and check the out put
+
+************************************************************************
+BINDING IN ANGULAR
+************************************************************************
+TYPES:
+	1. SOURCE TO VIEW
+	2. VIEW TO SOURCE
+	3. SOURCE TO VIEW TO SOURCE(TWO WAY BINDING)
+
+A. DATA BINDING IN ANGULAR
+-----------------------------
+	It can be done using two ways
+		a. using Interpolation Bindings : {{data}}
+		b. Property Binding: []
+B. CLASS | STYLE BINDING
+------------------------------
+C. EVENT BINDING
+------------------------------
+
+
+goto> terminal and create new component named> Binding
+> ng g c binding
+
+> goto> binding.component.ts file>
+
+just define a varibale like below:
+
+name:string="SARB Application";
+
+
+then goto> binding.component.html and use it
+
+
+
+
+<p>binding works!</p>
+
+<h3>getting  data using interpolation: {{name}}</h3>
+
+
+
+now copy the selector tag of binding.component.js file to app.component.html
+
+
+app.component.html
+----------------------------
+<h1>Welcome to Angular Application </h1>
+
+<app-mycomponent></app-mycomponent>
+<app-header></app-header>
+<app-binding></app-binding>
 
 
 
