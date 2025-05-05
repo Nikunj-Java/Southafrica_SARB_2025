@@ -223,6 +223,25 @@ Bootstrap in an angular
 </div>
 
 
+Event Binding:
+------------------------------------------------------
+goto>binding.component.ts
+    flag:boolean=false;
+
+  show(){
+    this.flag=!this.flag;
+  }
+
+now goto>binding.component.html
+
+<h2>Event Binding</h2>
+
+<div class="container">
+    <button (click)="show()" class="btn btn-primary">Show</button>
+
+    <div *ngIf="flag" style="background-color: yellowgreen;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia eum tenetur perspiciatis autem libero, similique architecto itaque temporibus quos doloribus, ad quasi quo, eius modi dicta animi eveniet voluptas corrupti.</div>
+
+</div>
 
 
 

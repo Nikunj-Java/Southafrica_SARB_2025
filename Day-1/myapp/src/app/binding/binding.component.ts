@@ -18,4 +18,9 @@ export class BindingComponent {
   
   ]
 
+  flag:boolean=false;
+
+  show(){
+    this.flag=!this.flag;
+  }
 }
