@@ -243,6 +243,18 @@ now goto>binding.component.html
 
 </div>
 
+Property Bindings
+-------------------------
+
+goto>binding.component.ts
+
+ url:string="https://www.google.com";
+
+goto>binding.compoent.html
+
+<h2>Property binnding</h2>
+<a [href]="url">Connect to Google</a>
+
 
 
 

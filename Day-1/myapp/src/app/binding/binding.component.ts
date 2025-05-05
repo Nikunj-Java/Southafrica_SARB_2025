@@ -23,4 +23,7 @@ export class BindingComponent {
   show(){
     this.flag=!this.flag;
   }
+
+
+  url:string="https://www.google.com";
 }

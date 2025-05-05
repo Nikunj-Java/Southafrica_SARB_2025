@@ -11,10 +11,10 @@
         </thead>
         <tbody>
             <tr *ngFor="let p of products">
-                <td>{{p.name}}</td>
+                <td [class.inStock]="true">{{p.name}}</td>
                 <td>{{p.price}}</td>
                 <td>{{p.availability}}</td>
-                <td>{{p.rating}}</td>
+                <td [class.inStock1]="true">{{p.rating}}</td>
             </tr>
 
         </tbody>
@@ -29,3 +29,6 @@
     <div *ngIf="flag" style="background-color: yellowgreen;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia eum tenetur perspiciatis autem libero, similique architecto itaque temporibus quos doloribus, ad quasi quo, eius modi dicta animi eveniet voluptas corrupti.</div>
 
 </div>
+
+<h2>Property binnding</h2>
+<a [href]="url">Connect to Google</a>
