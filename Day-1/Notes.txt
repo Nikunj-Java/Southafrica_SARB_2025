@@ -282,6 +282,17 @@ goto> binding.component.html
  <td [class.inStock]="true">{{p.name}}</td>
 
 
+STYLE BINDING
+----------------------------------------
+goto> binding.component.ts
+
+we:number=700;
+
+goto> binding.component.html
+
+<td  [style.font-weight]="we">{{p.price}}</td>
+
+
 
 
 

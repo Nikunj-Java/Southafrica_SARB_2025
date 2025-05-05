@@ -12,7 +12,7 @@
         <tbody>
             <tr *ngFor="let p of products">
                 <td [class.inStock]="true">{{p.name}}</td>
-                <td>{{p.price}}</td>
+                <td  [style.font-weight]="we">{{p.price}}</td>
                 <td>{{p.availability}}</td>
                 <td [class.inStock1]="true">{{p.rating}}</td>
             </tr>

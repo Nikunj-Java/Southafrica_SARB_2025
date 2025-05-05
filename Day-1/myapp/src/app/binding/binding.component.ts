@@ -26,4 +26,5 @@ export class BindingComponent {
 
 
   url:string="https://www.google.com";
+  we:number=700;
 }
