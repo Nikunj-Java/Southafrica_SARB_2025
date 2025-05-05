@@ -255,8 +255,31 @@ goto>binding.compoent.html
 <h2>Property binnding</h2>
 <a [href]="url">Connect to Google</a>
 
+CLASS BINDING
+-----------------------------------------   
+goto> binding.component.css
+
+.inStock{
+    background-color: royalblue;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.inStock1{
+    background-color: lightblue;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 1400;
+}
 
 
+goto> binding.component.html
+
+
+ <td [class.inStock]="true">{{p.name}}</td>
 
 
 
