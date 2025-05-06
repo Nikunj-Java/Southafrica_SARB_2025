@@ -1,9 +1,29 @@
-<div class="container">
-    <h5>Value coming from parent:</h5> <b>{{pdata}}</b>
-</div>
-
-
-<div class="container">
-    <h5>Sending data from Child to Parent</h5>
-    <input type="text" #cdata (keyup)="onChange(cdata.value)"/>
-</div>
+<div class="container mt-4">
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h5 class="card-title text-primary">Value Coming from Parent</h5>
+        <p class="card-text">
+          <span class="badge bg-info text-dark">{{ pdata }}</span>
+        </p>
+      </div>
+    </div>
+  
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-success">Sending Data from Child to Parent</h5>
+        <div class="input-group">
+          <input
+            type="text"
+            #cdata
+            (keyup)="onChange(cdata.value)"
+            class="form-control"
+            placeholder="Type here to send to parent"
+          />
+          <span class="input-group-text">
+            <i class="bi bi-arrow-up"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

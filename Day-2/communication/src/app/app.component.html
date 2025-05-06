@@ -1,14 +1,25 @@
+<div class="container mt-4">
+  <div class="card shadow-sm mb-4" style="width: 100%;">
+    <div class="card-body">
+      <h5 class="card-title">Two Way Communication</h5>
+      <p class="card-text">Using Event Emiiter and Inputs we can create this</p>
+       
+    </div>
+  </div>
 
-<div class="container">
-  <h1>Two Way Communication</h1>
-  <h2>Parent Sending a Data To Child</h2>
+  <div class="card shadow-sm p-4">
+   
 
-  <input (keyup)="0" type="text" #pdata>
+    <div class="mb-3">
+      <label for="pdata" class="form-label fw-bold">Parent Sending Data To Child:</label>
+      <input type="text" id="pdata" #pdata (keyup)="0" class="form-control" placeholder="Type something for child..." />
+    </div>
 
-  <h2> Value coming from child</h2> <b>{{cdata}}</b>
+    <div class="mb-3">
+      <h5>Value coming from child:</h5>
+      <p class="alert alert-info">{{ cdata }}</p>
+    </div>
+
+    <app-child [pdata]="pdata.value" (cevent)="cdata = $event"></app-child>
+  </div>
 </div>
-
-
-
-<app-child  [pdata]="pdata.value" (cevent)="cdata=$event" ></app-child>
-
