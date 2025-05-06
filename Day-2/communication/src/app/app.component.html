@@ -1,0 +1,11 @@
+
+<div class="container">
+  <h1>Two Way Communication</h1>
+  <h2>Parent Sending a Data To Child</h2>
+
+  <input (keyup)="0" type="text" #pdata>
+</div>
+
+
+<app-child [pdata]="pdata.value" ></app-child>
+
