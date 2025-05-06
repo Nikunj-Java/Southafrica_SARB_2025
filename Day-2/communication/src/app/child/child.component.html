@@ -1,3 +1,9 @@
 <div class="container">
     <h5>Value coming from parent:</h5> <b>{{pdata}}</b>
 </div>
+
+
+<div class="container">
+    <h5>Sending data from Child to Parent</h5>
+    <input type="text" #cdata (keyup)="onChange(cdata.value)"/>
+</div>

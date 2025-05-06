@@ -4,8 +4,11 @@
   <h2>Parent Sending a Data To Child</h2>
 
   <input (keyup)="0" type="text" #pdata>
+
+  <h2> Value coming from child</h2> <b>{{cdata}}</b>
 </div>
 
 
-<app-child [pdata]="pdata.value" ></app-child>
+
+<app-child  [pdata]="pdata.value" (cevent)="cdata=$event" ></app-child>
 
