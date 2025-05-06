@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
  
 import { ChildComponent } from './child/child.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { WeatherComponent } from './weather/weather.component';
+import { ChangeColorDirective } from './changeColorDirective';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    WeatherComponent,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,

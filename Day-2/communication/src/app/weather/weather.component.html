@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <div class="row">
+      <div 
+        class="col-md-4 mb-3"
+        *ngFor="let day of weatherData"
+      >
+        <div 
+          class="card text-white text-center"
+          [ngClass]="{
+            'bg-primary': day.type === 'Sunny',
+            'bg-secondary': day.type === 'Cloudy',
+            'bg-info': day.type === 'Rainy',
+            'shadow-lg': day.date === currentDate,
+            'border border-3 border-dark': day.date === currentDate
+          }"
+          [ngStyle]="day.date === currentDate ? { 'transform': 'scale(1.1)' } : {}"
+        >
+          <div class="card-body">
+            <h5 class="card-title">
+              {{ day.date === currentDate ? 'Today' : day.date }}
+            </h5>
+            <img 
+              [src]="getIconPath(day.type)" 
+              alt="{{ day.type }} icon" 
+              width="60" 
+              height="60" 
+              class="mb-2"
+            />
+            <p class="card-text fs-5">{{ day.type }}</p>
+            <h4 class="fw-bold">{{ day.temp }}°C</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
