@@ -9,6 +9,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { WeatherComponent } from './weather/weather.component';
 import { ChangeColorDirective } from './changeColorDirective';
 import { HighLightDirective } from './highLightDirective';
+import { ModelComponent } from './model/model.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,12 @@ import { HighLightDirective } from './highLightDirective';
     DirectivesComponent,
     WeatherComponent,
     ChangeColorDirective,
-    HighLightDirective
+    HighLightDirective,
+    ModelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule //<---formsmodule contains ngModel
   ],
   providers: [],
   bootstrap: [AppComponent]
