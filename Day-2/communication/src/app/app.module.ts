@@ -8,6 +8,7 @@ import { ChildComponent } from './child/child.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { WeatherComponent } from './weather/weather.component';
 import { ChangeColorDirective } from './changeColorDirective';
+import { HighLightDirective } from './highLightDirective';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChangeColorDirective } from './changeColorDirective';
     ChildComponent,
     DirectivesComponent,
     WeatherComponent,
-    ChangeColorDirective
+    ChangeColorDirective,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,
