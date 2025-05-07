@@ -7,7 +7,6 @@ export class CustomDatePipe implements PipeTransform {
 
   transform(value: Date | string | number, format: 'short' | 'medium' | 'long' = 'medium'): string {
      
-
     const date = new Date(value);
 
     const formatOptions: Record<string, Intl.DateTimeFormatOptions> = {
