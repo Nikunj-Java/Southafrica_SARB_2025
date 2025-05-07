@@ -1,7 +1,24 @@
 <div class="container">
   <h1>My Angular Application</h1>
+
+  <ul class="nav bg-warning text-secondary">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="pipes" >Pipes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="rform" >ReactiveForm</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="tform" >TemplateForm</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="todo" >Todo-App</a>
+    </li>
+
+  </ul>
 </div>
-<app-pipes></app-pipes>
-<app-tform></app-tform>
-<app-rform></app-rform>
-<app-todo></app-todo>
+
+<router-outlet></router-outlet>
