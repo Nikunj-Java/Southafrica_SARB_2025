@@ -11,6 +11,7 @@ import { ChangeColorDirective } from './changeColorDirective';
 import { HighLightDirective } from './highLightDirective';
 import { ModelComponent } from './model/model.component';
 import { FormsModule } from '@angular/forms';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     WeatherComponent,
     ChangeColorDirective,
     HighLightDirective,
-    ModelComponent
+    ModelComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,97 @@
+<div class="card">
+    <div class="card-header">
+      Pipe Examples
+    </div>
+    <div class="card-body">
+        <ol>
+            <li>In-Built Pipes</li>
+            <li>Custom Pipes</li>
+          </ol>
+      
+    </div>
+    <div class="card-footer text-body-secondary">
+     Below are the Examples
+    </div>
+  </div>
+
+
+<br>
+  
+  <!--Inbuilt Pipes-->
+  <div class="card">
+    <div class="card-header">
+      1. Inbuilt Pipe
+    </div>
+    <h3>A. String Pipe</h3>
+    <div class="card-body bg-warning">
+        <p> <b>UPPERCASE:</b> {{name | uppercase}}</p>
+      
+    </div>
+
+    <br>
+    <div class="card-body bg-info">
+        <p> <b>lowercase:</b> {{name | lowercase}}</p>
+      
+    </div>
+    <br>
+    <h3>B. Number Pipe</h3>
+    <div class="card-body bg-success text-warning">
+        <p> <b>pi: 5 digits before and after decimal point</b> {{pi | number:'5.5-5'}}</p>
+      <hr>
+      <p> <b>pi: 5 digits after decimal point</b> {{pi | number:'.5-5'}}</p>
+      
+      <hr>
+      <p> <b>pi: 3 digits  Before and after decimal point</b> {{pi | number:'3.3-3'}}</p>
+      
+
+      <hr>
+      <p> <b>pi: 10 digits after decimal point</b> {{pi | number:'.10-10'}}</p>
+      
+    </div>
+
+
+    <h3>C. Currency Pipe</h3>
+    <div class="card-body bg-info">
+        <p> <b>USD: </b> {{a | currency:'USD':true :'3.3-3'}}</p>
+      <hr>
+      <p> <b>USD: </b> {{a | currency:'USD':false :'3.3-3'}}</p>
+      <hr>
+      <p> <b>EURO: </b> {{b | currency:'EURO':false}}</p>
+      <hr>
+
+      <p> <b>SAR: </b> {{b | currency:'SAR':true}}</p>
+      <hr>
+
+      <p> <b>RAND: </b> {{b | currency:'RAND':true}}</p>
+      <hr>
+
+      <p> <b>INR: </b> {{b | currency:'INR':true:'4.4-4'}}</p>
+      <hr>
+       
+    </div>
+
+
+    <h3>D. Date Pipe</h3>
+    <div class="card-body bg-primary">
+        <p> <b>Today is: </b> {{today}}</p>
+      <hr>
+      <p> <b>Today's Date is: </b> {{today | date}}</p>
+      <hr>
+      <p> <b>Today's Date in dd/MM/yyyy: </b> {{today | date:'dd/MM/yyyy'}}</p>
+      <hr>
+      
+    </div>
+
+    <h3>E. JSON Pipe</h3>
+    <div class="card-body bg-success">
+        <p> <b>Without Pipes: </b> {{object}}</p>
+      <hr>
+
+      <p> <b>With Pipes:: </b> {{object |json}}</p>
+      <hr>
+       
+      
+    </div>
+
+     
+  </div>
