@@ -4,15 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { customPipes } from './CustomePipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PipesComponent
+    PipesComponent,
+    customPipes //<----define here
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
