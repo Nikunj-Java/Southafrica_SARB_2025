@@ -9,13 +9,14 @@ import { CustomDatePipe } from './CustomDatePipe';
 import { TformComponent } from './tform/tform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RformComponent } from './rform/rform.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipesComponent,
     customPipes, //<----define here
-    CustomDatePipe, TformComponent, RformComponent//
+    CustomDatePipe, TformComponent, RformComponent, TodoComponent//
   ],
   imports: [
     FormsModule,//<--- needed for  template Driven Form Approach
