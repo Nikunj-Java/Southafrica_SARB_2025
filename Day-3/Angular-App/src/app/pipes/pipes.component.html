@@ -75,7 +75,7 @@
   <div class="card-body bg-primary">
     <p> <b>Today is: </b> {{today}}</p>
     <hr>
-    <p> <b>Today's Date is: </b> {{today | date}}</p>
+    <p> <b>Today's Date is: </b> {{today | date }}</p>
     <hr>
     <p> <b>Today's Date in dd/MM/yyyy: </b> {{today | date:'dd/MM/yyyy'}}</p>
     <hr>
@@ -101,10 +101,20 @@
   <div class="card-header">
    2. Custom Pipe
   </div>
-  <h3>A. Custom String </h3>
+  <h3>A. Custom String Pipe </h3>
   <div class="card-body bg-warning">
     <p> <b>Original String</b> {{name}}</p>
     <p> <b>Custom String</b> {{name | changestring: ' '}}</p>
     <p> <b>Multiple Pipes</b> {{name | uppercase| changestring: ' '}}</p>
   </div>
+
+  <h3>A. Custom Date Pipe </h3>
+  <div class="card-body bg-warning">
+    <p>{{ today | customDate }}</p>
+    <p>Custom Date-short :{{ today| customDate: 'short' }}</p>
+    <p>Custom Date-Medium :{{ today| customDate: 'medium' }}</p>
+    <p>Custom Date-Long :{{ today| customDate: 'long' }}</p>
+  </div>
+  
+
 </div>
