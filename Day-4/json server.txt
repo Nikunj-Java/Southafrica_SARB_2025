@@ -1,0 +1,21 @@
+create Json Server:
+----------------------------------------------------------
+
+> npm install -g json-Server
+
+-----------------------------------------------------------
+
+create Databse file named db.json under>youapp(root) folder
+
+
+db.json
+------------------------------------------------------------
+{
+    "user":[
+        {"id":1,"name":"Nikunj Soni","email":"nikunj@gmail.com"},
+        {"id":2,"name":"Jhon Doe","email":"jhon@gmail.com"},
+    ]
+}
+-------------------------------------------------------------
+Start the Server
+json-server --watch db.json --port 3000

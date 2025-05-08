@@ -10,6 +10,8 @@ import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersComponent } from './users/users.component';
+import { CrudComponent } from './crud/crud.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { UsersComponent } from './users/users.component';
     BodyComponent,
     ChildAComponent,
     ChildBComponent,
-    UsersComponent
+    UsersComponent,
+    CrudComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
