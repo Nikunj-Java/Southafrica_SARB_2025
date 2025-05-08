@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "id": "fb0f",
-      "name": "Nikunj Soni",
-      "email": "nikunj@gmail.com"
-    },
-    {
       "id": "3890",
       "name": "Xoliswa Mazomba",
       "email": "xm@testmail.com"
     },
     {
       "id": "b3a9",
-      "name": "Lefy",
-      "email": "lefu@gmail.com"
+      "name": "Lefu",
+      "email": "lefu123@gmail.com"
+    },
+    {
+      "id": "1b52",
+      "name": "Khayakazi Gama",
+      "email": "kg@gmail.com"
     }
   ]
 }

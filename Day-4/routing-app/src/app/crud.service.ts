@@ -23,5 +23,14 @@ export class CrudService {
     return this.http.post<MyUser>(this.url,myuser)
   }
 
+  //delete Service
+  deleteUser(id:number):Observable<void>{
+    return this.http.delete<void>(`${this.url}/${id}`)
+  }
+
+  //update user
+  updateUser(myuser:MyUser):Observable<MyUser>{
+    return this.http.put<MyUser>(`${this.url}/${myuser.id}`,myuser);
+  }
   
 }
