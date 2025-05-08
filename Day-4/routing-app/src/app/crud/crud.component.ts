@@ -14,6 +14,7 @@ export class CrudComponent implements OnInit {
   newUser:MyUser={name:'',email:''}
    
   isEditMode:boolean=false;
+  selectedImageFile: File | null = null;
    
 
   ngOnInit(): void {
@@ -56,10 +57,21 @@ export class CrudComponent implements OnInit {
   deletUser(id:number){
     this.myservice.deleteUser(id).subscribe(()=>this.loadUsers());
   }
-
+  //reset Form
   resetForm(){
     this.newUser={name:'',email:''};
     this.isEditMode=false;
 
+  }
+  //image
+  onImageSelected(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      this.selectedImageFile = file;
+      this.newUser.image = file.name;
+
+      // 🔴 IMPORTANT: Manually copy the image file into /src/assets/
+      // In real backend, you'd upload the file to the server here.
+    }
   }
 }
