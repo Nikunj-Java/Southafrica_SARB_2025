@@ -1,1 +1,16 @@
-<p>my demo</p>
+<h1>my demo</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th><th>userId</th><th>Title</th><th>body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of posts">
+            <td>{{p.id}}</td>
+            <td>{{p.userId}}</td>
+            <td>{{p.title}}</td>
+            <td>{{p.body}}</td>
+        </tr>
+    </tbody>
+</table>
