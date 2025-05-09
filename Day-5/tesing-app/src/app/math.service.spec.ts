@@ -44,5 +44,46 @@ describe('MathService', () => {
     const obj2={id:10};
     expect(obj1).toEqual(obj2);
   })
-  
+  it('should match the string',()=>{
+    const str="Nikunj Soni"
+    expect(str).toMatch("Soni")
+  })
+
+  it('should check the truthyness',()=>{
+    expect(service.add(20,20)).toBeTruthy();
+  })
+
+  it('should check the toBeUndefined',()=>{
+    const value=undefined;
+    expect(value).toBeUndefined();
+  })
+
+  it('should check the value toBeGreaterThanOrEqual',()=>{
+    expect(service.add(10,5)).toBeGreaterThanOrEqual(12)
+  })
+
+  it('should check the value toBeLessThamOrEqual',()=>{
+    expect(service.multiply(10,2)).toBeLessThanOrEqual(20);
+    expect(service.add(10,2)).toBeLessThanOrEqual(20);
+  })
+
+  it('should check the value toBeClosedTo',()=>{
+    expect(service.add(0.1,0.2)).toBeCloseTo(0.3)
+    expect(service.add(0.1,0.2)).toBeCloseTo(0.301)
+  })
+
+  it('should check the instaanceof',()=>{
+    const math= new MathService();
+    expect(math).toBeInstanceOf(MathService);
+  })
+
+  it('should check the value toBeDefined',()=>{
+    const value=50;
+    expect(value).toBeDefined();
+  })
+
+  it('should check the value not toBeDefined',()=>{
+    const value=undefined;
+    expect(value).not.toBeDefined();
+  })
 });
