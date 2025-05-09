@@ -29,4 +29,20 @@ describe('MathService', () => {
     const result=service.divide(25,5);
     expect(result).toBe(5);
   })
+
+  it('should throw an error when divide by zero',()=>{
+    expect(()=>service.divide(12,0)).toThrowError('Cannot divide by zero');
+  })
+
+  it('should check if a number is even',()=>{
+    expect(service.isEven(4)).toBe(true);
+    expect(service.isEven(7)).toBe(false)
+  })
+
+  it('should match  the object',()=>{
+    const obj1={id:10};
+    const obj2={id:10};
+    expect(obj1).toEqual(obj2);
+  })
+  
 });
