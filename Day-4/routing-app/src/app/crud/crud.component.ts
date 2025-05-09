@@ -70,7 +70,7 @@ export class CrudComponent implements OnInit {
       this.selectedImageFile = file;
       this.newUser.image = file.name;
 
-      // 🔴 IMPORTANT: Manually copy the image file into /src/assets/
+      // IMPORTANT: Manually copy the image file into /src/assets/
       // In real backend, you'd upload the file to the server here.
     }
   }
