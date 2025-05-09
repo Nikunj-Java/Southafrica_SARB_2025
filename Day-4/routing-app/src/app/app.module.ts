@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { UsersComponent } from './users/users.component';
 import { CrudComponent } from './crud/crud.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+     
   ],
   providers: [],
   bootstrap: [AppComponent]

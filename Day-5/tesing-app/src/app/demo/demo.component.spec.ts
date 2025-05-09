@@ -14,6 +14,7 @@ describe('DemoComponent', () => {
       imports:[HttpClientTestingModule],
       providers:[DataService]
     }).compileComponents();
+    
     fixture = TestBed.createComponent(DemoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

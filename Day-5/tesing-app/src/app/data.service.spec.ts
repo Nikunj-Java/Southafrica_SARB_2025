@@ -26,6 +26,17 @@ describe('DataService', () => {
     expect(service).toBeTruthy();
   });
 
+  it('should fetch all posts using GET',()=>{
+    service.getAllPosts().subscribe(posts=>{
+      expect(posts.length).toBeGreaterThanOrEqual(1);
+    });
+    const req= httpMock.expectOne(service.url);
+    expect(req.request.method).toBe('GET');
+     
+  })
+
+  
+   
   
 
   
