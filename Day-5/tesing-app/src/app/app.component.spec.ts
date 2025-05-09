@@ -1,7 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { DemoComponent } from './demo/demo.component';
 
+let component: DemoComponent;
 describe('AppComponent', () => {
+
+  it('should create', () => {
+    expect(DemoComponent).toBeTruthy();
+  });
   beforeEach(() => TestBed.configureTestingModule({
     declarations: [AppComponent]
   }));
@@ -24,4 +30,16 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('Testing - APP');
   });
+ 
 });
+
+
+describe('DemoComponent', () => {
+
+  it('should create', () => {
+    expect(DemoComponent).toBeTruthy();
+  });
+   
+ 
+});
+
